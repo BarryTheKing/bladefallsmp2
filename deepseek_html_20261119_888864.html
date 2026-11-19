@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BladefallSMP - Lawless Bedrock Survival</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome ikonları için (LeviMC'deki gibi ikonlar için) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR (LeviMC Tarzı) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="BladefallSMP" onerror="this.style.display='none'"> 
+                <span class="logo-text">BLADEFALL<span class="accent-green">SMP</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pvp">PvP Techniques</a></li>
+                <li><a href="#guide">Server Guide</a></li>
+                <li><a href="#news">News</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="#" class="nav-icon"><i class="fa-brands fa-discord"></i></a>
+                <a href="#" class="nav-icon"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION (LeviMC Tarzı Gradient Başlık) -->
+    <section id="hero" class="section hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <p class="hero-subtitle">LAWLESS SURVIVAL • BEDROCK EDITION</p>
+                <h1 class="hero-title gradient-text">BLADEFALLSMP</h1>
+                <h2 class="hero-subtitle-large">A lawless world.<br>Your way.</h2>
+                <p class="hero-desc">
+                    A lawless survival world where the night glows blue and no one knows who's watching. 
+                    Claim, grief, raid, and survive however you can.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#join" class="btn btn-primary">Join the Server</a>
+                    <a href="#guide" class="btn btn-secondary">How to Join</a>
+                </div>
+                
+                <div class="hero-tags mt-4">
+                    <span class="badge badge-dark"><i class="fa-solid fa-server"></i> Season 1</span>
+                    <span class="badge badge-dark"><i class="fa-solid fa-gamepad"></i> Bedrock</span>
+                    <button id="copyIpBtn" class="btn btn-secondary btn-small"><i class="fa-regular fa-copy"></i> Copy Gamertag</button>
+                </div>
+            </div>
+
+            <!-- Sağ taraf: LeviMC'deki kod penceresi gibi bir görsel alanı -->
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="code-title">BladefallSMP</span>
+                    </div>
+                    <div class="code-body">
+                        <img src="img/hero-logo.png" alt="Bladefall Logo" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'color:#64748b; padding: 2rem; text-align:center;\'>[ img/hero-logo.png ]</div>';">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR WORLD / STATS (LeviMC Tarzı Sade Kartlar) -->
+    <section id="our-world" class="section bg-darker">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="title">Our World</h2>
+                <p class="desc">BladefallSMP is a lawless Bedrock anarchy world. No rules, no limits.</p>
+            </div>
+
+            <div class="grid-4">
+                <div class="card stat-card">
+                    <h3 class="stat-value text-gradient">24/7</h3>
+                    <p class="stat-label">Uptime</p>
+                </div>
+                <div class="card stat-card">
+                    <h3 class="stat-value text-gradient">Survival</h3>
+                    <p class="stat-label">Game Mode</p>
+                </div>
+                <div class="card stat-card">
+                    <h3 class="stat-value text-gradient">Bedrock</h3>
+                    <p class="stat-label">Platform</p>
+                </div>
+                <div class="card stat-card">
+                    <h3 class="stat-value text-gradient">Chaos</h3>
+                    <p class="stat-label">Community</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES (LeviMC Tarzı Discord/Telegram Kartları Gibi) -->
+    <section id="features" class="section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="title">Features</h2>
+            </div>
+
+            <div class="grid-2">
+                <div class="card feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-skull-crossbones"></i></div>
+                    <div>
+                        <h3 class="pixel-font">LAWLESS SURVIVAL</h3>
+                        <p class="text-muted mt-1">Nothing is safe. Dig deeper, hoard harder, and trust no one on the block.</p>
+                    </div>
+                </div>
+                <div class="card feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-fire"></i></div>
+                    <div>
+                        <h3 class="pixel-font">TOTAL CHAOS</h3>
+                        <p class="text-muted mt-1">Raids, wars, and sudden betrayals. Expect the unexpected at any moment.</p>
+                    </div>
+                </div>
+                <div class="card feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <div>
+                        <h3 class="pixel-font">NO SAFE ZONES</h3>
+                        <p class="text-muted mt-1">Every base is fair game — grief, raid, and claim territory however you want.</p>
+                    </div>
+                </div>
+                <div class="card feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-eye"></i></div>
+                    <div>
+                        <h3 class="pixel-font">HUNT OR BE HUNTED</h3>
+                        <p class="text-muted mt-1">Covered in obsidian or hidden deep underground — if they find you, it's war.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PVP TECHNIQUES (Sekmeler) -->
+    <section id="pvp" class="section bg-darker">
+        <div class="container">
+            <div class="section-header text-left">
+                <p class="hero-subtitle">BEDROCK COMBAT</p>
+                <h2 class="title">PvP Techniques</h2>
+            </div>
+
+            <div class="tabs-container">
+                <div class="tabs">
+                    <button class="tab-btn active" data-target="movement">Movement</button>
+                    <button class="tab-btn" data-target="melee">Melee</button>
+                    <button class="tab-btn" data-target="ranged">Ranged</button>
+                    <button class="tab-btn" data-target="prep">Prep & Survival</button>
+                </div>
+
+                <div class="tab-content card">
+                    <div id="movement" class="tab-pane active">
+                        <h3>Movement & spacing</h3>
+                        <ul class="bullet-list mt-3">
+                            <li>Vary your left-right strafes in short bursts so your path is harder to predict.</li>
+                            <li>Use sprint to control distance, then pause or change direction instead of charging blindly.</li>
+                            <li>Keep moving while tracking your opponent; avoid backing straight away for too long.</li>
+                            <li>Jump selectively to dodge or clear terrain—constant jumps can make your movement easier to read.</li>
+                        </ul>
+                    </div>
+                    <div id="melee" class="tab-pane">
+                        <h3>Melee Combat</h3>
+                        <p class="text-muted mt-2">Details coming soon.</p>
+                    </div>
+                    <div id="ranged" class="tab-pane">
+                        <h3>Ranged Combat</h3>
+                        <p class="text-muted mt-2">Details coming soon.</p>
+                    </div>
+                    <div id="prep" class="tab-pane">
+                        <h3>Prep & Survival</h3>
+                        <p class="text-muted mt-2">Details coming soon.</p>
+                    </div>
+                </div>
+                <p class="text-muted text-sm mt-2">General Minecraft Bedrock tips, not a claim about specific BladefallSMP items or mechanics.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- JOIN & SERVER GUIDE -->
+    <section id="guide" class="section">
+        <div class="container">
+            <div class="section-header text-center">
+                <p class="hero-subtitle">BLADEFALL SMP • FIELD GUIDE</p>
+                <h2 class="title">Server Guide</h2>
+            </div>
+
+            <div class="tabs-container max-w-3xl mx-auto">
+                <div class="tabs justify-center">
+                    <button class="tab-btn" data-target="rules">Server Rules</button>
+                    <button class="tab-btn active" data-target="howto">How to Join</button>
+                    <button class="tab-btn" data-target="ranks">Ranks & Shop</button>
+                </div>
+
+                <div class="tab-content card">
+                    <div id="rules" class="tab-pane">
+                        <h3>Server Rules</h3>
+                        <p class="text-muted mt-2">No rules. No safe zones. Anything goes.</p>
+                    </div>
+                    <div id="howto" class="tab-pane active">
+                        <h3>Join the world</h3>
+                        <ol class="steps-list mt-3">
+                            <li>Open Minecraft Bedrock / MCPE.</li>
+                            <li>Go to Friends &rarr; Add Friend and search for <strong>BarryHarry1505</strong>.</li>
+                            <li>Add the gamertag as a friend and join the open world.</li>
+                        </ol>
+                        <div class="alert-box mt-4">
+                            A direct server IP is not listed on the current site; connect using the gamertag.
+                        </div>
+                    </div>
+                    <div id="ranks" class="tab-pane">
+                        <h3>Ranks & Shop</h3>
+                        <div class="grid-4 mb-4 mt-2">
+                            <div class="sub-card"><span>RANK</span><strong>VIP</strong><p class="text-accent">$5,000</p></div>
+                            <div class="sub-card"><span>RANK</span><strong>PRO</strong><p class="text-accent">$12,500</p></div>
+                            <div class="sub-card"><span>RANK</span><strong>ELITE</strong><p class="text-accent">$25,000</p></div>
+                            <div class="sub-card"><span>RANK</span><strong>LEGEND</strong><p class="text-accent">$50,000</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWS -->
+    <section id="news" class="section bg-darker">
+        <div class="container">
+            <div class="section-header text-left">
+                <h2 class="title">News</h2>
+                <p class="desc">The latest from BladefallSMP.</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="card news-card">
+                    <div class="news-img-placeholder"><img src="img/news1.png" alt="Launch" onerror="this.parentElement.innerHTML='[ img/news1.png ]';"></div>
+                    <span class="badge mt-3">SERVER</span>
+                    <h3 class="pixel-font mt-2">A lawless world awaits</h3>
+                    <p class="text-muted text-sm mt-1">BladefallSMP is a Bedrock survival world with no limits. Gather your gear and prepare.</p>
+                </div>
+                <div class="card news-card">
+                    <div class="news-img-placeholder"><img src="img/news2.png" alt="Update" onerror="this.parentElement.innerHTML='[ img/news2.png ]';"></div>
+                    <span class="badge mt-3">UPDATE</span>
+                    <h3 class="pixel-font mt-2">Season 1 Trailer</h3>
+                    <p class="text-muted text-sm mt-1">The official trailer is currently in production. Stay tuned for the reveal.</p>
+                </div>
+                <div class="card news-card">
+                    <div class="news-img-placeholder"><img src="img/news3.png" alt="Community" onerror="this.parentElement.innerHTML='[ img/news3.png ]';"></div>
+                    <span class="badge mt-3">COMMUNITY</span>
+                    <h3 class="pixel-font mt-2">Join the Discord</h3>
+                    <p class="text-muted text-sm mt-1">Connect with other players, share your mods, and get real-time help.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMMUNITY & CREDITS (LeviMC Tarzı) -->
+    <section id="community" class="section">
+        <div class="container text-center">
+            <h2 class="title gradient-text">Join the community.</h2>
+            <p class="desc max-w-2xl mx-auto mt-2 mb-4">Connect with players building the future of BladefallSMP. Get help, share your bases, and contribute to the chaos.</p>
+            
+            <div class="grid-2 max-w-3xl mx-auto">
+                <a href="#" class="card community-card">
+                    <div class="community-icon discord-bg"><i class="fa-brands fa-discord"></i></div>
+                    <div class="text-left">
+                        <h3>Discord</h3>
+                        <p class="text-muted mt-1">Get real-time help, share your bases, and chat with the core team and community.</p>
+                        <span class="text-accent mt-2 inline-block font-bold">Join Discord &rarr;</span>
+                    </div>
+                </a>
+                <a href="#" class="card community-card">
+                    <div class="community-icon youtube-bg"><i class="fa-brands fa-youtube"></i></div>
+                    <div class="text-left">
+                        <h3>YouTube</h3>
+                        <p class="text-muted mt-1">Join our YouTube channel and meet the crew behind BladefallSMP.</p>
+                        <span class="text-accent mt-2 inline-block font-bold">Visit Channel &rarr;</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="credits mt-4">
+                <p class="text-muted text-sm">Meet the crew: <strong>Kobisteria</strong>, <strong>Fleo40</strong>, <strong>PalePython</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (LeviMC Tarzı) -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <div class="logo mb-2">
+                    <img src="img/logo.png" alt="Logo" onerror="this.style.display='none'">
+                    <span class="logo-text">BLADEFALL<span class="accent-green">SMP</span></span>
+                </div>
+                <p class="text-muted text-sm max-w-sm">Not affiliated with Mojang or Microsoft. Open-source survival for Minecraft Bedrock Edition.</p>
+            </div>
+            
+            <div class="footer-right">
+                <div class="footer-links">
+                    <a href="#features">Features</a>
+                    <a href="#guide">Guide</a>
+                    <a href="#news">News</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+                <div class="footer-socials">
+                    <a href="#" class="social-btn"><i class="fa-brands fa-discord"></i></a>
+                    <a href="#" class="social-btn"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="social-btn"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="social-btn"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p class="text-muted text-sm">&copy; 2026 BladefallSMP &bull; Support us <i class="fa-solid fa-heart" style="color: #ef4444;"></i></p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
